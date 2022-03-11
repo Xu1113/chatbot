@@ -12,7 +12,7 @@ jobs:  								# gather all the jobs that run in the workflow
         run: echo 'Hello World'  	
         
       - name: View a file           # Step 3: Two sub-steps involved
-      - package: aufdenpunkt/python-safety-check
         run: |
            echo 'Viewing the file: '   
            cat requirements.txt 
+      - uses: package: aufdenpunkt/python-safety-check
